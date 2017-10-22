@@ -48,6 +48,8 @@ void setup() {
 
 	ledcSetup(6, 50, 16); // channel 6, 50 Hz, 16-bit width
 	ledcAttachPin(PIN_SERVO, 6);   // GPIO 22 assigned to channel 1
+	delay(50);
+	ledcWrite(6, SERVO_AUX_NEUTRO);
 
 	Serial.begin(115200);
 
@@ -64,11 +66,11 @@ void setup() {
 	for (uint8_t k = 0; k < 5; k++) {
 		setMotorSpeedM1(5);
 		setMotorSpeedM2(5);
-		ledcWrite(6, SERVO_AUX_NEUTRO + 500);
+		ledcWrite(6, SERVO_AUX_NEUTRO + 250);
 		delay(200);
 		setMotorSpeedM1(-5);
 		setMotorSpeedM2(-5);
-		ledcWrite(6, SERVO_AUX_NEUTRO - 500);
+		ledcWrite(6, SERVO_AUX_NEUTRO - 250);
 		delay(200);
 	}
 	ledcWrite(6, SERVO_AUX_NEUTRO);
@@ -316,7 +318,7 @@ void loop() {
 			ledcWrite(6, SERVO_AUX_NEUTRO);
 
 		// Servo2
-		ledcWrite(6, SERVO2_NEUTRO + (OSCfader[2] - 0.5) * SERVO2_RANGE);
+		//ledcWrite(6, SERVO2_NEUTRO + (OSCfader[2] - 0.5) * SERVO2_RANGE);
 
 		// Normal condition?
 		if ((angle_adjusted < 56) && (angle_adjusted > -56)) {
