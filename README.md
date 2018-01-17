@@ -21,3 +21,9 @@ Pin connections (refer to defines.h to change):
 * I2C pins for gyro: (defaults) SDA=P21, SCL=P22
 
 ESP-32 Board is a NodeMCU ESP32s, see [Pinout](http://esp32.net/images/Ai-Thinker/NodeMCU-32S/Ai-Thinker_NodeMCU-32S_DiagramPinout.png).
+
+**Important note:** At the time of this writing (January 2018) the recent version of arduino-esp32 contains changes that break the I2C communication with the IMU a few seconds after startup.
+This version is known to work reliably for the purpose of the robot:
+https://github.com/espressif/arduino-esp32/tree/32c028a27e6b3c3c3df769bb42f0d87917e0309c
+
+For more details on the I2C problem mentioned, please refer to this issue: https://github.com/espressif/arduino-esp32/issues/834
