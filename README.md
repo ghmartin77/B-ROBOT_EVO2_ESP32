@@ -26,4 +26,6 @@ ESP-32 Board is a NodeMCU ESP32s, see [Pinout](http://esp32.net/images/Ai-Thinke
 This version is known to work reliably for the purpose of the robot:
 https://github.com/espressif/arduino-esp32/tree/32c028a27e6b3c3c3df769bb42f0d87917e0309c
 
-For more details on the I2C problem mentioned, please refer to this issue: https://github.com/espressif/arduino-esp32/issues/834
+For more details on the I2C problem mentioned, please refer to these issues (haven't tried the forks mentioned there):
+* https://github.com/espressif/arduino-esp32/issues/834
+* https://github.com/espressif/arduino-esp32/issues/839
