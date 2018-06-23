@@ -75,7 +75,7 @@ void setup() {
 	}
 	ledcWrite(6, SERVO_AUX_NEUTRO);
 
-	digitalWrite(PIN_ENABLE_MOTORS, LOW);
+	digitalWrite(PIN_ENABLE_MOTORS, HIGH);
 }
 
 void processOSCMsg() {
