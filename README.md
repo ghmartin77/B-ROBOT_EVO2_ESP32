@@ -29,3 +29,6 @@ https://github.com/espressif/arduino-esp32/tree/32c028a27e6b3c3c3df769bb42f0d879
 For more details on the I2C problem mentioned, please refer to these issues (haven't tried the forks mentioned there):
 * https://github.com/espressif/arduino-esp32/issues/834
 * https://github.com/espressif/arduino-esp32/issues/839
+
+Further discussions, information, circuit diagrams and more you can find in the corresponding thread in JJRobots forum at http://forums.jjrobots.com/showthread.php?tid=1399
+
