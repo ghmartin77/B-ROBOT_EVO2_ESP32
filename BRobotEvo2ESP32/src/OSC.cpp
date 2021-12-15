@@ -59,7 +59,7 @@ void OSC_init() {
 }
 
 void OSC_MsgSend(char *c, unsigned char msgSize, float p) {
-	uint8_t i;
+	// uint8_t i;
 	union {
 		unsigned char Buff[4];
 		float d;

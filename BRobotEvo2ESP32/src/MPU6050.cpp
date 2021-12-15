@@ -221,7 +221,7 @@ bool MPU6050_newData()
 // MPU6050_read n bytes
 int MPU6050_read(int start, uint8_t *buffer, int size)
 {
-  int i, n, error;
+  int i, n /*,error*/;
 
   Wire.beginTransmission(MPU6050_I2C_ADDRESS);
   n = Wire.write(start);
@@ -233,7 +233,7 @@ int MPU6050_read(int start, uint8_t *buffer, int size)
     return (n);
 
   // Third parameter is true: relase I2C-bus after data is read.
-  Wire.requestFrom((uint8_t) MPU6050_I2C_ADDRESS, (size_t) size, (bool) true);
+  Wire.requestFrom((uint16_t) MPU6050_I2C_ADDRESS, (size_t) size, (bool) true);
   i = 0;
   while (Wire.available() && i < size)
   {

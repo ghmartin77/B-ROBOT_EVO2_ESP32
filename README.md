@@ -32,3 +32,6 @@ For more details on the I2C problem mentioned, please refer to these issues (hav
 
 Further discussions, information, circuit diagrams and more you can find in the corresponding thread in JJRobots forum at http://forums.jjrobots.com/showthread.php?tid=1399
 
+# Building firmware
+
+Support for both AduinoIDE as well as PlatformIO. When Uploading code via platformIO remeber to adjust the upload port to match your setup in the platform.ini
