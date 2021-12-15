@@ -34,4 +34,4 @@ Further discussions, information, circuit diagrams and more you can find in the 
 
 # Building firmware
 
-Support for both AduinoIDE as well as PlatformIO. When Uploading code via platformIO remeber to adjust the upload port to match your setup in the platform.ini
+Support for both AduinoIDE as well as PlatformIO. When Uploading code via platformIO remeber to adjust the upload port to match your setup in the platform.ini.

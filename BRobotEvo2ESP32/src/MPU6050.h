@@ -13,7 +13,7 @@
 #define RAD2GRAD 57.2957795
 #define GRAD2RAD 0.01745329251994329576923690768489
 
-// #define MPU6050_AUX_VDDIO          0x01   // R/W
+#define MPU6050_AUX_VDDIO          0x01   // R/W
 #define MPU6050_SMPLRT_DIV         0x19   // R/W
 #define MPU6050_CONFIG             0x1A   // R/W
 #define MPU6050_GYRO_CONFIG        0x1B   // R/W
@@ -24,7 +24,7 @@
 #define MPU6050_MOT_DUR            0x20   // R/W
 #define MPU6050_ZRMOT_THR          0x21   // R/W
 #define MPU6050_ZRMOT_DUR          0x22   // R/W
-// #define MPU6050_FIFO_EN            0x23   // R/W
+#define MPU6050_FIFO_EN            0x23   // R/W
 #define MPU6050_I2C_MST_CTRL       0x24   // R/W
 #define MPU6050_I2C_SLV0_ADDR      0x25   // R/W
 #define MPU6050_I2C_SLV0_REG       0x26   // R/W
@@ -431,7 +431,7 @@
 // lower address, so that has to be corrected.
 // The register part "reg" is only used internally,
 // and are swapped in code.
-union accel_t_gyro_union
+typedef union accel_t_gyro_union
 {
   struct
   {

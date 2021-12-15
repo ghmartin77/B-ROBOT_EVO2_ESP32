@@ -221,7 +221,7 @@ bool MPU6050_newData()
 // MPU6050_read n bytes
 int MPU6050_read(int start, uint8_t *buffer, int size)
 {
-  int i, n /*,error*/;
+  int i, n, error;
 
   Wire.beginTransmission(MPU6050_I2C_ADDRESS);
   n = Wire.write(start);
